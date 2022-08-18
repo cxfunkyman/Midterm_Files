@@ -1,0 +1,348 @@
+/* ------------------------------------------------------- 
+Midterm Exam 
+Written by: Seky Perez Moya 219-5412 
+For “Front-End Web Programming” Section 05807– Winter 2022 
+--------------------------------------------------------  */
+
+
+* { 
+    box-sizing: border-box; 
+    border-color: black;
+}
+body {
+      font-family:'Times New Roman', Times, serif;
+      background-color: white;
+}
+#wrapper { 
+         background-color: #b3e6c2;
+         background: linear-gradient(to top, #b3e6c2 40%, white 100%);
+         background-repeat: no-repeat; 
+         width: 95%;
+         margin: auto;
+         margin: auto; 		           
+		 border: 2px solid  rgb(111, 202, 20);
+ 		
+} 
+nav { 
+      float: left;
+      width: 150px;
+      font-family: verdana, Arial, Helvetica, sans-serif;
+      font-size: 120%;  
+      text-align: center;    
+} 
+nav ul { 
+        list-style-type: none; 
+        padding: 5px; 
+}
+nav a { 
+      text-decoration: none; 
+      padding: 7px;
+      font-weight: bold; 
+}
+nav a:link { 
+            color: rgb(8, 100, 8); 
+}
+nav a:visited { 
+            color: rgb(128, 128, 128); 
+}
+nav a:hover { 
+            color: #000066; 
+}
+nav a:focus  {
+            color:#FF0000;
+}
+nav a:active  {
+            color:#e2ec4a;
+}
+
+main { 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10% 10%;
+      margin-left: 155px;
+      background-color: #ffffff;
+      color: #000000;
+      display: block;
+      font-size:120%;
+} 
+header { 
+      background-color: rgb(8, 100, 8);
+      color: White;
+      text-align: center; 
+      font-size: 140%; 
+      padding: 1% 1% 1% 1%;
+      width: 100%;
+}
+
+h2 { 
+    color: #869dc7; 
+    font-family: 'Times New Roman', Times, serif;
+}
+.content {
+        padding: 20px 20px 0 20px; 
+} 
+#floatright { 
+           margin: 10px;
+           float: right;
+}
+
+footer {
+       font-size:70%;
+       text-align: center;
+       clear: right;
+       padding-bottom:20px;
+}
+p span.format {
+    font-weight: bold;
+    color: rgb(111, 202, 20);
+} 
+.Fcolor{
+    color: rgb(111, 202, 20);
+} 
+.Hcolor{
+    color: rgb(111, 202, 20);
+    font-size: 160%;
+}
+.Bcolor{
+    color: rgb(7, 114, 7);
+} 
+ul.graph{
+    list-style-image: url("marker.gif");
+}
+img{
+     width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+}
+.cap {
+    color: rgb(111, 202, 20);
+    font-weight: bold;
+    font-size: 100%;  
+}
+table { 
+    border: 2px solid rgb(111, 202, 20);
+    border-collapse: collapse;
+}
+td, th { 
+        padding: 0.3em;
+        border: 2px solid rgb(111, 202, 20); 
+}
+td { 
+        text-align: center; 
+}
+.textformat { 
+        text-align: left; 
+}
+tr:nth-of-type(odd) { 
+    background-color: #F5FAFC; 
+}
+section { 
+    grid-row: 2 / 3;
+    grid-column: auto; 
+}
+.arrange { 
+    display: grid;  
+    grid-template-rows: auto ; 
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+section { 
+        padding-left: 2em;
+        padding-right: 2em; 
+}
+footer { 
+    margin-top: 1%;
+    grid-row: auto; 
+    grid-column: 1 / 5; 
+}
+a {
+    text-decoration: none;
+}
+form { 
+    width: 50%;
+    display: flex; 
+    flex-flow: column nowrap;
+}
+input, textarea { 
+    margin-bottom: .5em; 
+}
+input[type="submit"] { 
+    grid-column: 2 / 3;
+    width: 9em; 
+}
+
+  /* Extra small devices (phones, 499px and down) */
+  @media only screen and (max-width: 499px){
+  nav { 
+        float: none;
+        text-align: right;
+        width: 15px;
+        font-family: verdana, Arial, Helvetica, sans-serif;
+        font-size: 85%;  
+   
+  } 
+  nav ul { 
+          list-style-type: none; 
+          padding: 1px;
+          display: flex;
+          flex-flow: row nowrap;          
+  }
+  nav a { 
+        text-decoration: none; 
+        padding: 10px;
+        font-weight: bold; 
+  }
+nav li {     
+border-bottom: none; 
+}
+  
+  main { 
+        margin-left: 0px;
+        font-size:100%;
+  } 
+  header { 
+        font-size: 70%; 
+        padding: 1% 1% 1% 1%;
+        width: 100%;
+  }
+  
+  .content {
+      display: block;
+          padding: 10px 10px 0 20px; 
+  } 
+  #floatright { 
+             margin: 10px;
+             float: right;
+  }
+  .Hcolor{
+      color: rgb(111, 202, 20);
+      font-size: 120%;
+  }
+  table { 
+      border: 1px solid rgb(111, 202, 20); 
+  }
+  td, th { 
+          padding: 0.3em;
+          border: 1px solid rgb(111, 202, 20); 
+  }
+  section { 
+      grid-row: 2 / 3;
+      grid-column: auto; 
+  }
+  .arrange { 
+    display:block;  
+    grid-template-rows: auto ; 
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+  section { 
+          padding-left: 2em;
+          padding-right: 2em; 
+  }
+  form { 
+      width: 100%;
+  }
+  input[type="submit"] { 
+      width: 5em; 
+  }
+
+#tableform  {
+    grid-row: auto; grid-column: 1 / 5; 
+   }
+   .content {
+    padding: 0.1px 0.1px 0 0.1px; 
+} 
+  }
+  /* Small devices (portrait tablets and large phones, 500px and up) */
+  @media only screen and (min-width: 500px) and (max-width: 767px) {
+    nav { 
+        float: none;
+        text-align: right;
+        width: 15px;
+        font-family: verdana, Arial, Helvetica, sans-serif;
+        font-size: 85%;  
+   
+  } 
+  nav ul { 
+          list-style-type: none; 
+          padding: 1px;
+          display: flex;
+          flex-flow: row nowrap;          
+  }
+  nav a { 
+        text-decoration: none; 
+        padding: 10px;
+        font-weight: bold; 
+  }
+nav li {     
+border-bottom: none; 
+}
+  
+  main { 
+        margin-left: 0px;
+        font-size:100%;
+  } 
+  header { 
+        font-size: 70%; 
+        padding: 1% 1% 1% 1%;
+        width: 100%;
+  }
+  
+  .content {
+      display: block;
+          padding: 10px 10px 0 20px; 
+  } 
+  #floatright { 
+             margin: 10px;
+             float: right;
+  }
+  .Hcolor{
+      color: rgb(111, 202, 20);
+      font-size: 120%;
+  }
+  table { 
+      border: 1px solid rgb(111, 202, 20); 
+  }
+  td, th { 
+          padding: 0.3em;
+          border: 1px solid rgb(111, 202, 20); 
+  }
+  section { 
+      grid-row: 2 / 3;
+      grid-column: auto; 
+  }
+  .arrange { 
+    display:block;  
+    grid-template-rows: auto ; 
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+  section { 
+          padding-left: 2em;
+          padding-right: 2em; 
+  }
+  form { 
+      width: 100%;
+  }
+  input[type="submit"] { 
+      width: 5em; 
+  }
+
+#tableform  {
+    grid-row: auto; grid-column: 1 / 5; 
+   }
+   .content {
+    padding: 0.1px 0.1px 0 0.1px; 
+} 
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  }
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) and (max-width: 1232px) {
+
+  }
+  /* Extra large devices (large laptops and desktops, 1201px and up) */
+  @media only screen and (min-width: 1233px) {
+
+  } 
+  
+  
